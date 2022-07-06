@@ -1,5 +1,5 @@
 const convertBtn = document.getElementById('convert-btn')
-let meterFeet = document.getElementById("meter-feet");
+let metersFeet = document.getElementById("meter-feet");
 let litersGallons = document.getElementById("liters-gallons");
 let kilogramsPounds = document.getElementById("kilograms-pounds")
 
@@ -12,7 +12,7 @@ convertBtn.addEventListener("click", function() {
     const kilogram = (value * (1/2.204)).toFixed(3)
     const pound = (value * 2.204).toFixed(3)
 
-    meterFeet.innerHTML = `<h2 class="card-head">Length (Meter/Feet)</h2>
+    metersFeet.innerHTML = `<h2 class="card-head">Length (Meter/Feet)</h2>
                             <p>${value} meters = ${feet} feet | ${value} feet = ${meter} meters
                             </p>`
 
